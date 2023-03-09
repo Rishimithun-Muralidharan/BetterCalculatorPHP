@@ -11,15 +11,36 @@
       <br>
       <p>What is the second number</p><input type="number" name="number2">
       <br>
-      <p>What is the arithmetic operation: +, -, *, /</p><input type="textbox" name="arithmetic-op">
+      <p>What is the arithmetic operation: +, -, *, /</p><input type="textbox" name="arithmeticop">
       <br>
       <p><input type="submit"></p>
 
     </form>
+
     <?php
 
+    $num1 = $_POST ["number1"];
+    $num2 = $_POST ["number2"];
+    $arithmeticop = $_POST["arithmeticop"];
 
-    ?>
+    if ($arithmeticop == "+") {
+      echo $num1 + $num2;
+    } else if ($arithmeticop == "-") {
+      echo $num1 - $num2;
+    } else if($arithmeticop == "*") {
+      echo $num1 * $num2;
+    } else {
+      echo $num1 / $num2;
+    }
+
+    
+
+
+
+
+   ?>
+   
+
 
   </body>
   
