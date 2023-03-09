@@ -18,6 +18,7 @@
     </form>
 
     <?php
+    error_reporting(0);
 
     $num1 = $_POST ["number1"];
     $num2 = $_POST ["number2"];
@@ -29,8 +30,10 @@
       echo $num1 - $num2;
     } else if($arithmeticop == "*") {
       echo $num1 * $num2;
-    } else {
+    } else if ($arithmeticop == "/") {
       echo $num1 / $num2;
+    } else {
+      echo "Please use a valid operator";
     }
 
     
