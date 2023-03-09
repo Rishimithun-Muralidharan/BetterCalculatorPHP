@@ -11,6 +11,8 @@
       <br>
       <p>What is the second number</p><input type="number" name="number2">
       <br>
+      <p>What is the arithmetic operation: +, -, *, /</p><input type="textbox" name="arithmetic-op">
+      <br>
       <p><input type="submit"></p>
 
     </form>
